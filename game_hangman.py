@@ -69,15 +69,15 @@ stages = [
 
 print("🎉 LET'S PLAY HANGMAN! 🎉")
 
-# List of words to choose from
+
 words = ["apple", "banana", "cherry", "falcon", "grape", "horizon", "island", "jungle"]
 random_word = random.choice(words)
 
-# Display setup
+
 display = ["_" for _ in random_word]
 lives = len(stages) - 1
 
-# Game loop
+
 game_over = False
 while not game_over:
     print("\n" + " ".join(display))
